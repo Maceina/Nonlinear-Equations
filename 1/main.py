@@ -133,7 +133,7 @@ def dynamic_scan(intervals, start_step, f):
         step = start_step
         x_from = interval[0]
         x_to = interval[0]
-        limit = 2000
+        limit = 20000000
         iteration = 1
         while abs(f(x_from)) > accuracy and iteration < limit:
             iteration += 1
@@ -168,7 +168,7 @@ accurate_est_g = [-6, 6]
 print("1 - - - f(x) Iteration method")
 print("2 - - - f(x) Newton method")
 print("3 - - - f(x) Dynamic scan method")
-print("4 - - - VOLUME exercise method")
+print("4 - - - RESISTANCE exercise method")
 print("5 - - - show f(x)")
 print("6 - - - show g(x)")
 print("7 - - - g(x) Iteration method")
@@ -203,10 +203,10 @@ elif option == '3':
 
 elif option == '4':
     title = "Scan dynamic volume"
-    intervals = [[0.1, 20000]]
-    points_dynamic_scan_volume = dynamic_scan(intervals, 0.1, v)
+    intervals = [[-500, 2000000]]
+    points_dynamic_scan_volume = dynamic_scan(intervals, -500, v)
     info_print(points_dynamic_scan_volume, intervals, title)
-    show_graph(np.arange(0, 1, 0.0000001), V, (-0.25, 3),
+    show_graph(np.arange(0, 36, 0.0000001), v, (-0.25, 3),
                (-4, 4), [-2, 2], [-3, 3], intervals, "teal", points_dynamic_scan_volume[0], title)
 
 elif option == '5':
