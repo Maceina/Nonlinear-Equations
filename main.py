@@ -3,7 +3,7 @@
 # 1. Isspresti netiesines lygtis
 
 # Metodai:
-# 2 - Paprastuju iteraciju
+# 2 - Paprastuju iteracijua
 # 3 - Niutono(liestiniu) 
 # 5 - Skenavimo su mazejanciu zingsniu
 
