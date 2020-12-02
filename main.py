@@ -5,7 +5,7 @@
 # Metodai:
 # 2 - Paprastuju iteracijua
 # 3 - Niutono(liestiniu) 
-# 5 - Skenavimo su mazejanciu zingsniusas
+# 5 - Skenavimo su mazejanciu zingsniusass
 
 
 # Funkcijos:
