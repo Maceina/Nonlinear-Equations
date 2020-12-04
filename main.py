@@ -1,6 +1,6 @@
 # Project One. Number 15
 
-# 1. Isspresti netiesines lygtis
+# 1. Isspresti netiesines lygtiss
 
 # Metodai:
 # 2 - Paprastuju iteracijua
