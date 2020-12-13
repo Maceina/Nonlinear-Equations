@@ -102,7 +102,8 @@ def iteration_method(intervals, f, alpha):
             iteration += 1
         results.append(x)
         information.append(
-            ["iterations: " + str(iteration), "from interval: " + str(interval[0]),  "to interval: " + str(interval[1]), "alpha: " + str(alpha), "accuracy: " + str(accuracy)])
+            ["iterations: " + str(iteration), "from interval: " + str(interval[0]),
+              "to interval: " + str(interval[1]), "alpha: " + str(alpha), "accuracy: " + str(accuracy)])
         alpha *= -1
     return results, information
 
@@ -122,7 +123,8 @@ def newton_method(intervals, f, df):
             plt.plot([x, x, x - f(x) / df(x)], [0, f(x), 0])
         results.append(x)
         information.append(
-            ["iterations: " + str(iteration), "from interval: " + str(interval[0]),  "to interval: " + str(interval[1]), "accuracy: " + str(accuracy), "beta: " + str(beta)])
+            ["iterations: " + str(iteration), "from interval: " + str(interval[0]),  "to interval: " + str(interval[1]),
+             "accuracy: " + str(accuracy), "beta: " + str(beta)])
     return results, information
 
 
@@ -145,7 +147,8 @@ def dynamic_scan(intervals, start_step, f):
                 x_to = x_from
         results.append(x_from)
         information.append(
-            ["iterations: " + str(iteration), "from interval: " + str(interval[0]),  "to interval: " + str(interval[1]), "accuracy: " + str(accuracy)])
+            ["iterations: " + str(iteration), "from interval: " + str(interval[0]),
+              "to interval: " + str(interval[1]), "accuracy: " + str(accuracy)])
     return results, information
 
 def info_print(information, intervals, title):
