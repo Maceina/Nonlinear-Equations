@@ -169,7 +169,6 @@ accurate_est_g = [-6, 6]
 print("1 - - - f(x) Iteration method")
 print("2 - - - f(x) Newton method")
 print("3 - - - f(x) Dynamic scan method")
-print("4 - - - RESISTANCE exercise method")
 print("5 - - - show f(x)")
 print("6 - - - show g(x)")
 print("7 - - - g(x) Iteration method")
@@ -202,13 +201,13 @@ elif option == '3':
     show_graph(np.arange(-5, 3, 0.1), f, (-10, 10),
                (-4, 4), accurate_est, rough_est, intervals, "teal", points_dynamic_scan[0], title)
 
-elif option == '4':
-    title = "Scan dynamic volume"
-    intervals = [[-500, 2000000]]
-    points_dynamic_scan_volume = dynamic_scan(intervals, -500, v)
-    info_print(points_dynamic_scan_volume, intervals, title)
-    show_graph(np.arange(0, 36, 0.0000001), v, (-0.25, 3),
-               (-4, 4), [-2, 2], [-3, 3], intervals, "teal", points_dynamic_scan_volume[0], title)
+#elif option == '4':
+#    title = "Scan dynamic volume"
+#    intervals = [[-500, 2000000]]
+#    points_dynamic_scan_volume = dynamic_scan(intervals, -500, v)
+#    info_print(points_dynamic_scan_volume, intervals, title)
+#    show_graph(np.arange(0, 36, 0.0000001), v, (-0.25, 3),
+#               (-4, 4), [-2, 2], [-3, 3], intervals, "teal", points_dynamic_scan_volume[0], title)
 
 elif option == '5':
     print("f(x)")
